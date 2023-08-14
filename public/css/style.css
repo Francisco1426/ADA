@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorTextos: #7e7e7e;
+    /* --colorBotones: #f69229; */
+    --colorFondo: #5d8a9f;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+/* Menú */
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    height: 70px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    color: var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero{
+    height: 500px;
+    background-image: linear-gradient(120deg, #7ea7ea73 0%, #7cbad684 100%), url("../img/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#E5EBEB;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-weight: 300;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+/* Main */
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: var(--colorFondo);
+}
+
+.copy{
+    text-align: center;
+    color: var(--colorTextos);
+    margin: 20px 0;
+}
+
+.objetivos{
+    padding-top: var(--marginElementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.objetivo{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url("https://th.bing.com/th/id/R.7b4df17ae62d30f6d1c1c6a318682661?rik=VfE3h6UzMESalw&riu=http%3a%2f%2fwww.bypeople.com%2fwp-content%2fuploads%2f2015%2f07%2fsvg-low-poly-background-css-js-snippet.jpg&ehk=jlb%2b1Bh4vDp0YNblIKU9XfjzlkYRPyD%2bbTMy2N4yGwE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.colaboradores{
+    height: 450px;
+    width: 300px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.imagen{
+    background-color: #669AF0;
+    height: 250px;
+    width: 400px;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px #000;
+    transform: rotate(25deg);
+}
+
+.colaborador{
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/usuario.jpg");
+    position: relative;
+    top: 200px;
+    margin-left: 170px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 15px rgb(58, 54, 54);
+    transform: rotate(-20deg);
+}
+
+.redes{
+    margin-top: 15px;
+}
+
+.redes i{
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .3s;
+    color: black
+}
+
+.redes i:hover{
+    transform: scale(2.2);
+}
+
+footer{
+    background-image: url("../img/footer.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+footer .titulo-seccion,
+footer .copy{
+    color: #fff;
+}
+
+.redes-sociales{
+    padding-top: var(--marginElementos);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.redes-sociales i{
+    font-size: 60px;
+    color: #fff;
+}
+
+

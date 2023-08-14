@@ -1,0 +1,43 @@
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    border: 1px solid #636e72;
+    background: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    padding: 20px 10px;
+    color: #636e72;
+    margin-bottom: 20px;
+}
+
+.input[type="text"], input[type="email"]{
+    width: 48%;
+}
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 250px;
+    max-height: 350px;
+}
+
+.submit{
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    padding: 15px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit{
+    background: #2d3436;
+}
+
+
